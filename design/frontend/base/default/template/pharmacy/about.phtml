@@ -1,0 +1,14 @@
+<h1>about us</h1>
+<?php 
+
+$getCat = $this->getCat();
+
+foreach ($getCat as  $category) {
+ 	
+ 	$category=Mage::getModel('catalog/category')->load($category->getEntityId()); 	
+ 	echo "<ul>";
+ 	echo "<li><a href='".$category->getUrlPath()."'>".$category->getName()."</a></li>";
+ 	echo "</ul>";
+ 	echo '<pre>'; //print_r($category->getData());echo '</pre>';
+ } 
+ $this->getTest();

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<impressive_pharmacy>
+			<title>Lalazarexpress</title>
+			<sort_order>100</sort_order>
+			<children>
+				<menu1>
+					<title>pharmacy</title>
+					<sort_order>1</sort_order>
+					<action>adminhtml/pharmacy</action>
+				</menu1>
+				<menu2>
+					<title>impressive</title>
+					<sort_order>1</sort_order>
+					<action>adminhtml/impressive</action>
+				</menu2>
+			</children>
+		</impressive_pharmacy>
+	</menu>
+</config>

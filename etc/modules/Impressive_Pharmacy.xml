@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+	<modules>
+		<Impressive_Pharmacy>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Impressive_Pharmacy>
+	</modules>
+</config>

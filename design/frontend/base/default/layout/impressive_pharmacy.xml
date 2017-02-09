@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<pharmacy_index_index>
+		<reference name="root">
+			<action method="setTemplate"><template>page/3columns.phtml</template></action>
+		</reference>
+		<reference name="content">
+			<block type="pharmacy/pharmacy" name="mysite" template="pharmacy/pharmacy.phtml"/> 
+		</reference>
+		<reference name="left">
+			<block type="pharmacy/pharmacy" before="-" name="contact" template="pharmacy/about.phtml" />
+		</reference>
+		<reference name="right">
+			<block type="pharmacy/pharmacy" after="-" name="about" template="pharmacy/contact.phtml" />
+		</reference>
+   </pharmacy_index_index>
+</layout>

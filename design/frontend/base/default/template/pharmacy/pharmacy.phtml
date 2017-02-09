@@ -1,0 +1,15 @@
+<h1>hello</h1>
+<?php $products = $this->getProducts(); //print_r($products); 
+
+foreach($products as $product){
+	$pro = Mage::getModel('catalog/product')->load($product->getEntityId());
+	$full_path_url = Mage::helper('catalog/image')->init($pro, 'thumbnail');
+	echo "<a href='".$pro->getUrlPath()."'>".$pro->getName()."</a>";
+	echo "<img src='".$full_path_url."' />";
+	echo"<p>".$pro->getPrice()."</p>";
+print "<pre>";
+//print_r($pro);
+print"</pre>";
+}
+
+ ?>
